@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --color-copy: #333;
+    --color-primary: #ffc500;
+    /*Para criar uma varivel dev-se colocar --+nome da variavel e para usar a variavel dps usar a função VAR*/
+    --default-padding: 1rem;
+    color: var(--color-copy);
+
+}
+
+body {
+    margin: 0%;
+    padding-top: 7.75rem;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header main footer {
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+    height: 7.75rem;
+}
+
+.navbar__links {
+    justify-self: end;
+
+
+}
+
+.navbar__links a {
+    /* pegar um elemento dentro de uma class ou id*/
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar__links li {
+    margin-right: 3rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+
+.navbar__links a:hover {
+    color: var(--color-primary)
+}
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch;
+    text-transform: uppercase;
+    text-align: right;
+   
+
+
+}
+
+.logo-studion_subtitle {
+    font-size: 00.875rem;
+    font-weight: 300;
+    float: right;
+}
+
+.copy-primary {
+    color: var(--color-primary);
+}
+
+#slider {
+    padding: var(--default-padding);
+    background-color: #000;
+    /* background-image: url("banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    color: #fff;
+}
+
+.slide {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__image {
+    width: 100%;
+    /*ocupa a largura inteira*/
+    height: 100%;
+    /*ocupa o altura inteira*/
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+
+}
+
+.text01 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.text1 {
+
+    color: var(--color-primary)
+}
+
+.text2 {
+    color: var(--color-primary);
+
+}
+
+.text3 {
+    font-size: 100px;
+
+}
+
+.botao1 {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    /*padding define a altura pra cima e para baixo e dps a largura8*/
+    border: 2px solid #fff;
+    border-radius: 35px;
+    color: var(--color-primary);
+    background: unset;
+    /*unset usa para tirar qualquer propriedade do html*/
+    transition: 0.5s all ease;
+
+
+}
+
+.botao1:hover,
+.botao1:active,
+.botao1:focus,
+.botao1--institutional {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+/*essa parte ainda falta correções*/
+
+#counter {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+
+
+}
+
+.counter__container
+
+
+ {
+    margin: 0;
+    padding: 70px 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    place-items: center;
+
+
+}
+
+.counter__container h3 {
+    font-size: 35px;
+
+}
+
+.counter__container h3 small {
+    display: block;
+    font-size: 20px;
+}
+
+.institutional
+
+ {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    /*definir o espaçamento entre uma coluna e outra*/
+    align-items: center;
+    padding: 70px;
+}
+
+.institutional__copy
+
+
+{
+    padding: 0 30px;
+
+
+}
+
+.institutional__copy h6 {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.institutional__copy h4 {
+    font-size: 25px;
+    margin top: 15px;
+
+}
+
+.institutional p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 0;
+    margin-bottom: 40px;
+
+
+}
+
+.botao1--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
+
+
+
+
+}
+.cor1,
+.color3
+
+{
+    color:var(--color-primary);
+    
+}
+.quote{
+   
+    background-image: url(parallax.jpg);
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.quote__container{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+
+
+
+}
+.quote__copy{
+    background-color: #fff;
+    padding: 90px 70px;
+   
+}
+.quote__copy h6{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.quote__copy h2{
+    font-size: 60px;
+    font-weight: 800;
+    
+}
+.quote__copy button{
+    font-size: 15px;
+    background: unset;
+    border-color: #000;
+    color: #000;
+}
+.cor2{
+    color: black;
+}
+.footer{
+    background-color: #000;
+    margin: 0%;
+    padding: 70px ;
+    color: #fff;
+         
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 84px;
+    
+}
+.footer .logo-studion{
+    justify-self: start;
+       
+}
+.footer__form{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 9ch auto;
+        
+}
+.social{
+    justify-self: end;
+    font-size: 35px;
+}
+
+.social__footer{
+    justify-self: end;
+    
+    
+}
+.social a,
+.social a:visited,
+.social a:active
+
+{
+    color: #fff;
+}
+
+.footer__container p{
+    font-size: 14px;
+    align-items: baseline;
+    padding: 0 45px;
+    
+    }
+    .footer__container h2{
+        line-height: 0;
+    }
+    .footer__form label{
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        gap: 20px;
+       
+    }
+    .footer__form input{
+        background-color: var(--color-primary);
+        border: unset;
+        height: 46px;
+        padding: 0 14px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: black;
+    }
+    .footer__form input::placeholder{
+        color: black;                                                 /*colocar oa cor do pseudo seletores ou remover*/
+    }
+    .footer__form input:focus{
+        outline: unset;
+    }
+    .footer__form button{
+        border: unset;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+    }
+
+
+.fieldset{
+    margin: 0;
+    padding: 0;
+    border: unset;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.final{
+    align-items: center;
+    padding: 25px 800px;
+    font-size: 14px;
+    font-weight: 300;
+    grid-template-columns: auto;
+}
+.final__color{
+    color: var(--color-primary);
+    
+
+}
