@@ -1,0 +1,37 @@
+.navbar {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+    height: 7.75rem;
+}
+
+.navbar__links {
+    justify-self: end;
+
+
+}
+
+.navbar__links a {
+    /* pegar um elemento dentro de uma class ou id*/
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar__links li {
+    margin-right: 3rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+
+.navbar__links a:hover {
+    color: var(--color-primary)
+}

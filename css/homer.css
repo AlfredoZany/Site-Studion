@@ -1,0 +1,150 @@
+#slider {
+    padding: var(--default-padding);
+    background-color: #000;
+    /* background-image: url("banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    color: #fff;
+}
+
+.slide {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__image {
+    width: 100%;
+    /*ocupa a largura inteira*/
+    height: 100%;
+    /*ocupa o altura inteira*/
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+
+}
+
+#counter {
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+
+
+}
+
+.counter__container
+
+
+ {
+    margin: 0;
+    padding: 70px 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    place-items: center;
+
+
+}
+
+.counter__container h3 {
+    font-size: 35px;
+
+}
+
+.counter__container h3 small {
+    display: block;
+    font-size: 20px;
+}
+
+.institutional
+
+ {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    /*definir o espaçamento entre uma coluna e outra*/
+    align-items: center;
+    padding: 70px;
+}
+
+.institutional__copy
+
+
+{
+    padding: 0 30px;
+
+
+}
+
+.institutional__copy h6 {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.institutional__copy h4 {
+    font-size: 25px;
+    margin top: 15px;
+
+}
+
+.institutional p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 0;
+    margin-bottom: 40px;
+
+
+}
+
+.quote{
+   
+    background-image: url(parallax.jpg);
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.quote__container{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+
+
+
+}
+.quote__copy{
+    background-color: #fff;
+    padding: 90px 70px;
+   
+}
+.quote__copy h6{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.quote__copy h2{
+    font-size: 60px;
+    font-weight: 800;
+    
+}
+.quote__copy button{
+    font-size: 15px;
+    background: unset;
+    border-color: #000;
+    color: #000;
+}

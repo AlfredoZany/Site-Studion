@@ -1,0 +1,8 @@
+:root {
+    --color-copy: #333;
+ --color-primary: #ffc500;
+ /*Para criar uma varivel dev-se colocar --+nome da variavel e para usar a variavel dps usar a função VAR*/
+ --default-padding: 1rem;
+
+}
+
